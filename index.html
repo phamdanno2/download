@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tự động tải xuống</title>
+    <script type="text/javascript">
+        // Hàm này sẽ được gọi ngay khi trang được tải
+        window.onload = function() {
+            // Tạo một phần tử 'a' mới
+            var a = document.createElement('a');
+            a.href = 'http://103.92.25.254/JX2MIENPHI_MINHPHUNG.zip'; // Đặt href là đường link tải xuống
+            a.setAttribute('download', ''); // Yêu cầu tải xuống
+            document.body.appendChild(a); // Thêm phần tử vào trang
+            a.click(); // Tự động click vào liên kết để bắt đầu tải xuống
+            a.remove(); // Xóa phần tử sau khi tải xuống
+        };
+    </script>
+</head>
+    <meta http-equiv="refresh" content="1; url=http://jx2mienphi.net/huong-dan-cai-dat-game-20210508.aspx" />
+</html>
